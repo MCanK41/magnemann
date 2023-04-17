@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://mobile_touch.png" type="Texture" id=1]
+[ext_resource path="res://-gravity.png" type="Texture" id=2]
+[ext_resource path="res://fire_mobiletocuh.png" type="Texture" id=3]
+
+[node name="MobileeTouch" type="CanvasLayer"]
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2( 158.778, 519 )
+rotation = 1.5708
+scale = Vector2( 2.43056, 2.43056 )
+normal = ExtResource( 1 )
+action = "Right"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Left" type="TouchScreenButton" parent="."]
+modulate = Color( 0.223529, 0.223529, 0.223529, 1 )
+position = Vector2( 1, 596 )
+rotation = -1.5708
+scale = Vector2( 2.41581, 2.41581 )
+normal = ExtResource( 1 )
+action = "Left"
+
+[node name="Jump" type="TouchScreenButton" parent="."]
+position = Vector2( 39, 452 )
+scale = Vector2( 2.41581, 2.41581 )
+normal = ExtResource( 1 )
+action = "Jump"
+
+[node name="fire" type="TouchScreenButton" parent="."]
+position = Vector2( 861, 595 )
+rotation = -1.5708
+scale = Vector2( 2.41581, 2.41581 )
+normal = ExtResource( 3 )
+action = "fire"
+
+[node name="-gravity" type="TouchScreenButton" parent="."]
+position = Vector2( 946, 520 )
+scale = Vector2( 2.41581, 2.41581 )
+normal = ExtResource( 2 )
+action = "-gravity"

@@ -1,0 +1,173 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Pixellari.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://credıt.gd" type="Script" id=2]
+[ext_resource path="res://pixil-frame-0_4.png" type="Texture" id=3]
+[ext_resource path="res://magneman_jump.png" type="Texture" id=4]
+[ext_resource path="res://play.gd" type="Script" id=5]
+[ext_resource path="res://alisveris car.png" type="Texture" id=6]
+[ext_resource path="res://Button6.gd" type="Script" id=7]
+[ext_resource path="res://button2.png" type="Texture" id=8]
+[ext_resource path="res://social.gd" type="Script" id=9]
+[ext_resource path="res://discord amblem.png" type="Texture" id=10]
+[ext_resource path="res://pixel scroll.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 125
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 35
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 35
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Main Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_top = -1.0
+margin_right = 1024.0
+margin_bottom = 602.0
+texture = ExtResource( 3 )
+stretch_mode = 2
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0.870588, 0.870588, 0.870588, 1 )
+self_modulate = Color( 0, 0.498039, 0.615686, 1 )
+margin_left = 213.0
+margin_top = 15.0
+margin_right = 566.0
+margin_bottom = 141.0
+rect_pivot_offset = Vector2( -172, -17 )
+custom_fonts/font = SubResource( 1 )
+text = "Magne"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 0.870588, 0.870588, 0.870588, 1 )
+self_modulate = Color( 0.819608, 0.0901961, 0.0901961, 1 )
+margin_left = 559.0
+margin_top = 19.0
+margin_right = 912.0
+margin_bottom = 145.0
+rect_pivot_offset = Vector2( -172, -17 )
+custom_fonts/font = SubResource( 1 )
+text = "Man"
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 277.0
+margin_top = 170.0
+margin_right = 454.0
+margin_bottom = 352.0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="Button6"]
+margin_left = 41.0
+margin_top = 130.0
+margin_right = 165.0
+margin_bottom = 181.0
+custom_fonts/font = SubResource( 3 )
+text = "SHOP"
+
+[node name="AlisverisCar" type="Sprite" parent="Button6"]
+position = Vector2( 84.5, -14.5 )
+scale = Vector2( 4.29688, 4.10938 )
+texture = ExtResource( 6 )
+
+[node name="Button7" type="Button" parent="."]
+margin_left = 513.0
+margin_top = 176.0
+margin_right = 716.0
+margin_bottom = 346.0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+script = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Button7"]
+margin_left = 51.0
+margin_top = 128.0
+margin_right = 166.0
+margin_bottom = 179.0
+custom_fonts/font = SubResource( 2 )
+text = "PLAY"
+
+[node name="MagnemanJump" type="Sprite" parent="Button7"]
+position = Vector2( 89, 36 )
+scale = Vector2( 2.47266, 2.47266 )
+texture = ExtResource( 4 )
+
+[node name="Button8" type="Button" parent="."]
+margin_left = 283.0
+margin_top = 385.0
+margin_right = 460.0
+margin_bottom = 551.0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+script = ExtResource( 9 )
+
+[node name="DiscordAmblem" type="Sprite" parent="Button8"]
+position = Vector2( 87, 76 )
+scale = Vector2( 0.520979, 0.520979 )
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="Button8"]
+margin_left = 27.0
+margin_top = 122.0
+margin_right = 198.0
+margin_bottom = 173.0
+custom_fonts/font = SubResource( 5 )
+text = "SOCIAL"
+
+[node name="Button9" type="Button" parent="."]
+margin_left = 516.0
+margin_top = 386.0
+margin_right = 696.0
+margin_bottom = 546.0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Button9"]
+margin_left = 24.0
+margin_top = 120.0
+margin_right = 205.0
+margin_bottom = 171.0
+custom_fonts/font = SubResource( 4 )
+text = "CREDIT"
+
+[node name="PixelScroll" type="Sprite" parent="Button9"]
+position = Vector2( 82, 70 )
+scale = Vector2( 0.0498684, 0.0498684 )
+texture = ExtResource( 11 )
+
+[connection signal="pressed" from="Button6" to="Button6" method="_on_Button6_pressed"]
+[connection signal="pressed" from="Button7" to="Button7" method="_on_Button7_pressed"]
+[connection signal="pressed" from="Button8" to="Button8" method="_on_Button8_pressed"]
+[connection signal="pressed" from="Button9" to="Button9" method="_on_Button9_pressed"]

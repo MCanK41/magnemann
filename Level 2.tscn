@@ -1,0 +1,274 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://demir.png" type="Texture" id=1]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MobileeTouch.tscn" type="PackedScene" id=3]
+[ext_resource path="res://testere.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Key.tscn" type="PackedScene" id=5]
+[ext_resource path="res://door.tscn" type="PackedScene" id=6]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://light.png" type="Texture" id=8]
+[ext_resource path="res://lamba.png" type="Texture" id=9]
+[ext_resource path="res://pixil-frame-0_4.png" type="Texture" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1292.75, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 123.25, 123 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16.25, 187.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 94.5, 44.25 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 10, 311.5 )
+
+[node name="Level 2" type="Node2D"]
+
+[node name="Pixil-frame-04" type="TextureRect" parent="."]
+margin_top = -1.0
+margin_right = 2280.0
+margin_bottom = 582.0
+texture = ExtResource( 10 )
+stretch_mode = 2
+
+[node name="lamb" type="Node2D" parent="."]
+position = Vector2( 256, 47 )
+scale = Vector2( 1.60938, 1.60938 )
+
+[node name="Lamba" type="Sprite" parent="lamb"]
+texture = ExtResource( 9 )
+
+[node name="Light2D" type="Light2D" parent="lamb/Lamba"]
+position = Vector2( 8.07767, 10.5631 )
+texture = ExtResource( 8 )
+color = Color( 0.839216, 0.858824, 0.176471, 1 )
+
+[node name="Lamba6" type="Sprite" parent="lamb"]
+texture = ExtResource( 9 )
+
+[node name="Light2D2" type="Light2D" parent="lamb/Lamba6"]
+position = Vector2( 155.961, 12.4272 )
+texture = ExtResource( 8 )
+color = Color( 0.839216, 0.858824, 0.176471, 1 )
+
+[node name="Lamba2" type="Sprite" parent="lamb"]
+position = Vector2( 149.126, 1.86408 )
+texture = ExtResource( 9 )
+
+[node name="Light2D" type="Light2D" parent="lamb/Lamba2"]
+position = Vector2( 518.835, 13.6699 )
+texture = ExtResource( 8 )
+color = Color( 0.839216, 0.858824, 0.176471, 1 )
+
+[node name="Lamba3" type="Sprite" parent="lamb"]
+position = Vector2( 668.893, 0.932039 )
+texture = ExtResource( 9 )
+
+[node name="Light2D2" type="Light2D" parent="lamb/Lamba3"]
+position = Vector2( 150.68, 9.00971 )
+texture = ExtResource( 8 )
+color = Color( 0.839216, 0.858824, 0.176471, 1 )
+
+[node name="Light2D3" type="Light2D" parent="lamb/Lamba3"]
+position = Vector2( 495.534, 6.52427 )
+texture = ExtResource( 8 )
+color = Color( 0.839216, 0.858824, 0.176471, 1 )
+
+[node name="Lamba4" type="Sprite" parent="lamb"]
+position = Vector2( 818.019, 2.79612 )
+texture = ExtResource( 9 )
+
+[node name="Lamba5" type="Sprite" parent="lamb"]
+position = Vector2( 1188.04, -2.48544 )
+texture = ExtResource( 9 )
+
+[node name="coins" type="Node2D" parent="."]
+
+[node name="coin3" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1241, 529 )
+
+[node name="coin4" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1268, 531 )
+
+[node name="coin5" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1290, 533 )
+
+[node name="coin6" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1241, 508 )
+
+[node name="coin7" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1268, 510 )
+
+[node name="coin8" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1290, 512 )
+
+[node name="coin9" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1241, 485 )
+
+[node name="coin10" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1268, 487 )
+
+[node name="coin11" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1290, 489 )
+
+[node name="coin12" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1241, 464 )
+
+[node name="coin13" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1268, 466 )
+
+[node name="coin14" parent="coins" instance=ExtResource( 7 )]
+position = Vector2( 1290, 468 )
+
+[node name="testere" type="Node2D" parent="."]
+
+[node name="KinematicBody2D2" parent="testere" instance=ExtResource( 4 )]
+position = Vector2( 733, 27 )
+
+[node name="KinematicBody2D4" parent="testere" instance=ExtResource( 4 )]
+position = Vector2( 889, 31 )
+
+[node name="KinematicBody2D6" parent="testere" instance=ExtResource( 4 )]
+position = Vector2( 1050, 35 )
+
+[node name="KinematicBody2D7" parent="testere" instance=ExtResource( 4 )]
+position = Vector2( 1841, 27 )
+
+[node name="Block" type="KinematicBody2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Block"]
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 2270.0
+margin_bottom = 31.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Block"]
+position = Vector2( 986.25, 21 )
+shape = SubResource( 1 )
+
+[node name="TextureRect2" type="TextureRect" parent="Block"]
+margin_top = 568.0
+margin_right = 2272.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Block"]
+position = Vector2( 973, 579 )
+shape = SubResource( 1 )
+
+[node name="TextureRect3" type="TextureRect" parent="Block"]
+margin_left = 927.0
+margin_top = 350.0
+margin_right = 1354.0
+margin_bottom = 599.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Block"]
+position = Vector2( 1051.75, 472 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Block"]
+position = Vector2( 2033, 389 )
+shape = SubResource( 3 )
+
+[node name="TextureRect4" type="TextureRect" parent="Block"]
+margin_left = 1713.0
+margin_top = 197.0
+margin_right = 1745.0
+margin_bottom = 566.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Block"]
+position = Vector2( 1728.75, 384.5 )
+shape = SubResource( 3 )
+
+[node name="TextureRect5" type="TextureRect" parent="Block"]
+margin_left = 2017.0
+margin_top = 200.0
+margin_right = 2049.0
+margin_bottom = 569.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Block"]
+position = Vector2( 1260.5, 394.75 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Block"]
+position = Vector2( -11, 302 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Block"]
+position = Vector2( 2273, 300 )
+shape = SubResource( 5 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Area2D2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1521, 512 )
+
+[node name="Light2D" type="Light2D" parent="Node2D/Area2D2"]
+texture = ExtResource( 8 )
+color = Color( 0, 0.886275, 0.976471, 1 )
+
+[node name="Key" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 2147, 494 )
+
+[node name="Light2D" type="Light2D" parent="Node2D/Key"]
+texture = ExtResource( 8 )
+
+[node name="coin" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 756, 495 )
+
+[node name="Light2D" type="Light2D" parent="Node2D/coin"]
+texture = ExtResource( 8 )
+color = Color( 0.992157, 0.933333, 0.027451, 1 )
+
+[node name="coin2" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 1164, 285 )
+
+[node name="Light2D2" type="Light2D" parent="Node2D"]
+position = Vector2( 1170.5, 296.5 )
+texture = ExtResource( 8 )
+color = Color( 0.992157, 0.933333, 0.027451, 1 )
+
+[node name="Magneman" parent="." instance=ExtResource( 2 )]
+position = Vector2( 342, 516 )
+
+[node name="Camera2D" type="Camera2D" parent="Magneman"]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 2250
+limit_bottom = 600
+
+[node name="MobileeTouch" parent="Magneman" instance=ExtResource( 3 )]
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+margin_left = 1182.0
+margin_top = 443.0
+margin_right = 1353.0
+margin_bottom = 599.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="light" type="Node2D" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="light"]
+color = Color( 0.0352941, 0.0313726, 0.0313726, 1 )
+
+[node name="Light2D" type="Light2D" parent="light"]
+position = Vector2( 1383, 240 )
+scale = Vector2( 13.7207, 3.4082 )
+texture = ExtResource( 8 )
+color = Color( 0.92549, 0.878431, 0.501961, 1 )
+energy = 0.73

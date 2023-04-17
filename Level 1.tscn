@@ -1,0 +1,286 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://demir.png" type="Texture" id=1]
+[ext_resource path="res://Key.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://light.png" type="Texture" id=5]
+[ext_resource path="res://benzersiz.tscn" type="PackedScene" id=6]
+[ext_resource path="res://door.tscn" type="PackedScene" id=7]
+[ext_resource path="res://lamba.png" type="Texture" id=8]
+[ext_resource path="res://baslangickapisi.png" type="Texture" id=9]
+[ext_resource path="res://nails.tscn" type="PackedScene" id=10]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=11]
+[ext_resource path="res://MobileeTouch.tscn" type="PackedScene" id=12]
+[ext_resource path="res://magneman tilemap.png" type="Texture" id=13]
+[ext_resource path="res://pixil-frame-0_4.png" type="Texture" id=14]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2320, 21.5469 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 192, 15.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 400.75, 15.5 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 223.5, 15.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 143.5, 15.5 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 10, 281.5 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 144, 15.5 )
+
+[node name="Level 1" type="Node2D"]
+
+[node name="Pixil-frame-04" type="TextureRect" parent="."]
+margin_top = -1.0
+margin_right = 4635.0
+margin_bottom = 582.0
+texture = ExtResource( 14 )
+stretch_mode = 2
+
+[node name="Key" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3229, 103 )
+
+[node name="Light2D" type="Light2D" parent="Key"]
+position = Vector2( -2.00638, 15.8724 )
+texture = ExtResource( 5 )
+
+[node name="door" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4572, 224 )
+scale = Vector2( 1, 1 )
+
+[node name="Light2D" type="Light2D" parent="door"]
+texture = ExtResource( 5 )
+color = Color( 0, 0.886275, 0.976471, 1 )
+
+[node name="Lamba" type="Node2D" parent="."]
+
+[node name="Lamba" type="Sprite" parent="Lamba"]
+position = Vector2( 446, 84 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Light2D" type="Light2D" parent="Lamba/Lamba"]
+position = Vector2( 687.95, 107.393 )
+scale = Vector2( 11.9048, 1.3632 )
+texture = ExtResource( 5 )
+color = Color( 0.92549, 0.878431, 0.501961, 1 )
+
+[node name="Lamba2" type="Sprite" parent="Lamba"]
+position = Vector2( 971, 88 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Lamba3" type="Sprite" parent="Lamba"]
+position = Vector2( 1473, 80 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Lamba4" type="Sprite" parent="Lamba"]
+position = Vector2( 1935.75, 85.75 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Lamba5" type="Sprite" parent="Lamba"]
+position = Vector2( 2461, 84 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Lamba6" type="Sprite" parent="Lamba"]
+position = Vector2( 2957, 83 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Lamba7" type="Sprite" parent="Lamba"]
+position = Vector2( 3487, 83 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Lamba8" type="Sprite" parent="Lamba"]
+position = Vector2( 4158, 81 )
+scale = Vector2( 2.52344, 2.52344 )
+texture = ExtResource( 8 )
+
+[node name="Enemy" type="Node2D" parent="."]
+position = Vector2( 437, 78 )
+scale = Vector2( 2.9375, 2.9375 )
+
+[node name="Enemy2" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 253.617, 10.2128 )
+scale = Vector2( 0.340426, 0.340426 )
+
+[node name="Enemy3" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 1338.21, 82.0425 )
+scale = Vector2( 0.340426, 0.340426 )
+
+[node name="Enemy4" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 1332.09, 36.4255 )
+scale = Vector2( 0.340426, 0.340426 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2( -146, 108 )
+color = Color( 0.0352941, 0.0313726, 0.0313726, 1 )
+
+[node name="benzersiz" parent="." instance=ExtResource( 6 )]
+
+[node name="Baslangickapisi" type="Sprite" parent="."]
+position = Vector2( 59, 505 )
+scale = Vector2( 4.1875, 4.1875 )
+texture = ExtResource( 9 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 869, 375 )
+
+[node name="Light2D" type="Light2D" parent="Sprite2"]
+position = Vector2( 6, 17 )
+texture = ExtResource( 5 )
+texture_scale = 0.58
+color = Color( 0.992157, 0.933333, 0.027451, 1 )
+energy = 0.73
+
+[node name="nails" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1687, 167 )
+
+[node name="Light2D" type="Light2D" parent="nails"]
+position = Vector2( -9, 14 )
+texture = ExtResource( 5 )
+color = Color( 0.372549, 0.372549, 0.372549, 1 )
+
+[node name="Block" type="KinematicBody2D" parent="."]
+position = Vector2( 2, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="Block"]
+margin_left = -1.0
+margin_top = 572.0
+margin_right = 4640.0
+margin_bottom = 604.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Block"]
+position = Vector2( 2320, 592.906 )
+shape = SubResource( 1 )
+
+[node name="TextureRect3" type="TextureRect" parent="Block"]
+margin_right = 4640.0
+margin_bottom = 63.0
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 2
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Block"]
+position = Vector2( 2320, 41.4531 )
+shape = SubResource( 1 )
+
+[node name="TextureRect2" type="TextureRect" parent="Block"]
+margin_left = 669.0
+margin_top = 440.0
+margin_right = 1053.0
+margin_bottom = 471.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Block"]
+position = Vector2( 861, 455.5 )
+shape = SubResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Block"]
+margin_left = 1025.0
+margin_top = 213.0
+margin_right = 1826.0
+margin_bottom = 244.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Block"]
+position = Vector2( 1425.25, 228.5 )
+shape = SubResource( 3 )
+
+[node name="TextureRect5" type="TextureRect" parent="Block"]
+margin_left = 4161.0
+margin_top = 448.0
+margin_right = 4608.0
+margin_bottom = 479.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Block"]
+position = Vector2( 4384.5, 463.5 )
+shape = SubResource( 6 )
+
+[node name="TextureRect7" type="TextureRect" parent="Block"]
+margin_left = 3095.0
+margin_top = 200.0
+margin_right = 3382.0
+margin_bottom = 231.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Block"]
+position = Vector2( 3238.5, 215.5 )
+shape = SubResource( 4 )
+
+[node name="TextureRect6" type="TextureRect" parent="Block"]
+margin_left = 4608.0
+margin_top = 30.0
+margin_right = 4640.0
+margin_bottom = 573.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+flip_h = true
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Block"]
+position = Vector2( 4618, 310.5 )
+shape = SubResource( 5 )
+
+[node name="TextureRect8" type="TextureRect" parent="Block"]
+margin_left = 4326.0
+margin_top = 281.0
+margin_right = 4614.0
+margin_bottom = 312.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Block"]
+position = Vector2( 4470, 296.5 )
+shape = SubResource( 7 )
+
+[node name="TextureRect9" type="TextureRect" parent="Block"]
+margin_left = -34.0
+margin_top = 11.0
+margin_right = -1.0
+margin_bottom = 567.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="Magneman" parent="." instance=ExtResource( 4 )]
+position = Vector2( 334, 342 )
+
+[node name="Camera2D" type="Camera2D" parent="Magneman"]
+position = Vector2( 19, 115 )
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 4640
+limit_bottom = 575
+
+[node name="MobileeTouch" parent="Magneman" instance=ExtResource( 12 )]
+
+[connection signal="body_entered" from="door" to="Key" method="_on_door_body_entered"]
+
+[editable path="door"]
